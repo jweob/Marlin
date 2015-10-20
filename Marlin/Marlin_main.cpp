@@ -2297,6 +2297,10 @@ void process_commands()
 
 		sample_set[n] = current_position[Z_AXIS];
 
+// Print the z position to console
+              SERIAL_PROTOCOLPGM("   z: ");
+	      SERIAL_PROTOCOL_F(current_position[Z_AXIS], 6);
+
 //
 // Get the current mean for the data points we have so far
 //
