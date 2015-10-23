@@ -6,6 +6,8 @@
   #error Oops!  Make sure you have 'Sanguino' selected from the 'Tools -> Boards' menu.
 #endif
 
+#define SERVO0_PIN         11 // Servo pin 
+
 #define X_STEP_PIN         15
 #define X_DIR_PIN          21
 #define X_STOP_PIN         18
