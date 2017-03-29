@@ -597,7 +597,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {91.4286,91.4286,4000,920}  // JWEOB - these are the olf huxley rates with 14 toothed pulley, old extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,920}  // JWEOB - these are the olf huxley rates with 14 toothed pulley, old extruder
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,50,250}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
