@@ -475,7 +475,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   #if ENABLED(AUTO_BED_LEVELING_GRID)
 
     #define LEFT_PROBE_BED_POSITION 10
-    #define RIGHT_PROBE_BED_POSITION 130
+    #define RIGHT_PROBE_BED_POSITION 100
     #define FRONT_PROBE_BED_POSITION 10
     #define BACK_PROBE_BED_POSITION 110
 
@@ -821,7 +821,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //#define X_ENDSTOP_SERVO_NR 1
 //#define Y_ENDSTOP_SERVO_NR 2
 #define Z_ENDSTOP_SERVO_NR 0
-#define SERVO_ENDSTOP_ANGLES {{0,0}, {0,0}, {90,0}} // X,Y,Z Axis Extend and Retract angles
+#define SERVO_ENDSTOP_ANGLES {{0,0}, {0,0}, {105,25}} // X,Y,Z Axis Extend and Retract angles
 
 // Servo deactivation
 //
