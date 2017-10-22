@@ -502,7 +502,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   // X and Y offsets must be integers.
   #define X_PROBE_OFFSET_FROM_EXTRUDER -7     // Z probe to nozzle X offset: -left  +right
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -2     // Z probe to nozzle Y offset: -front +behind
-  // Note next line irrelevant - use M2851 instead
+  // Note next line irrelevant - use M851 instead
   #define Z_PROBE_OFFSET_FROM_EXTRUDER -12.35  // Z probe to nozzle Z offset: -below (always!)
 
   #define Z_RAISE_BEFORE_HOMING 30       // (in mm) Raise Z axis before homing (G28) for Z probe clearance.
@@ -597,7 +597,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 // default settings
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,920}  // JWEOB - these are the olf huxley rates with 14 toothed pulley, old extruder
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4046,920}  // JWEOB - these are the olf huxley rates with 14 toothed pulley, old extruder. Adjusted z to account for apparent error in z thread
 #define DEFAULT_MAX_FEEDRATE          {500, 500, 5, 45}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,50,250}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
@@ -821,7 +821,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 //#define X_ENDSTOP_SERVO_NR 1
 //#define Y_ENDSTOP_SERVO_NR 2
 #define Z_ENDSTOP_SERVO_NR 0
-#define SERVO_ENDSTOP_ANGLES {{0,0}, {0,0}, {105,25}} // X,Y,Z Axis Extend and Retract angles
+#define SERVO_ENDSTOP_ANGLES {{0,0}, {0,0}, {175,70}} // X,Y,Z Axis Extend and Retract angles
 
 // Servo deactivation
 //
